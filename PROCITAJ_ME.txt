@@ -1,0 +1,22 @@
+==========================================================
+  FIZIKA — Kolokvijum 2 (predavanja 6–10) — Sajt za učenje
+==========================================================
+
+KAKO DA OTVORIŠ:
+  -> Dva puta klikni na "index.html" (otvara se u pregledaču)
+  Napomena: za lepe formule (LaTeX) potreban je internet (KaTeX sa CDN-a).
+
+LEKCIJE:
+   6. Oscilacije i talasi I (harmonijske oscilacije, mehanički talasi)
+   7. Talasi II i EM talasi (zvuk, interferencija, rezonancija, Dopler)
+   8. Optika (geometrijska i talasna)
+   9. Kvantna optika i atom (crno telo, fotoefekat, Bohr)
+  10. Kvantna mehanika (de Brolj, neodređenost, Šredinger, tunel-efekat)
+
+Svaka lekcija ima: sažetak, objašnjene celine, LaTeX formule,
+GALERIJU SLAJDOVA (klik = uvećanje, strelice), kartice i mini kviz.
+
+ALATI (meni levo): Skripta (sve formule), Kartice, Veliki kviz.
+Dugmad: pretraga, tamna/svetla tema, Štampaj (PDF).
+
+Napredak se pamti u pregledaču. Srećno na kolokvijumu! 🎓
