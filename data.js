@@ -1120,7 +1120,7 @@ const TOPICS = [T_l6, T_l7, T_l8, T_l9, T_l10];
 (function(){
   var l8 = TOPICS.find(function(t){return t.id==='l8';});
   if(!l8) return;
-  var _f = function(s,c){return '<figure class="figure"><img src="'+s+'?v=5" alt="'+c+'"><figcaption>'+c+'</figcaption></figure>';};
+  var _f = function(s,c){return '<figure class="figure"><img src="'+s+'?v=6" alt="'+c+'"><figcaption>'+c+'</figcaption></figure>';};
 
   var idx = l8.sections.findIndex(function(s){var h=s.h||s.title||s.name||'';return h.indexOf('Disperzija')>=0;});
   if(idx<0) idx = l8.sections.length-1;
