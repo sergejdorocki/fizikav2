@@ -1149,3 +1149,42 @@ const TOPICS = [T_l6, T_l7, T_l8, T_l9, T_l10];
     "Dvojno prelamanje i opticka aktivnost": [_f("img/l8/d084.jpg","Dvojno prelamanje — redovan i neredovan zrak u kristalu.")]
   });
 })();
+
+/* === Dijagrami (skice) za L6, L7, L9, L10 — u kontekstu po sekciji === */
+(function(){
+  var _f=function(s,c){return '<figure class="figure"><img src="'+s+'" alt="'+c+'"><figcaption>'+c+'</figcaption></figure>';};
+  function setFigs(id, map){var t=TOPICS.find(function(x){return x.id===id;}); if(t) t.figures=Object.assign(t.figures||{}, map);}
+
+  setFigs('l6', {
+    "Elastična (restituciona) sila":[_f("img/l6/d003.jpg","Teg na opruzi — elastična (restituciona) sila F = −k·x.")],
+    "Energija oscilatora":[_f("img/l6/d009.jpg","Kinetička i potencijalna energija se prelivaju; zbir je konstantan.")],
+    "Oscilatorno (LC) kolo":[_f("img/l6/d013.jpg","Oscilatorno LC kolo — električni analog mehaničkog oscilatora.")],
+    "Nastanak mehaničkog talasa":[_f("img/l6/d017.jpg","Nastanak talasa — lanac povezanih oscilatora (faze T/4 … T).")],
+    "Transverzalni i longitudinalni talasi":[_f("img/l6/d025.jpg","Transverzalni talas — čestice osciluju normalno na pravac prostiranja."),_f("img/l6/d026.jpg","Longitudinalni talas — čestice osciluju u pravcu prostiranja."),_f("img/l6/d027.jpg","Sferni i ravni talasni front.")],
+    "Talasna jednačina":[_f("img/l6/d036.jpg","Longitudinalni talas u šipki — element dx (izvođenje talasne jednačine).")]
+  });
+
+  setFigs('l7', {
+    "Fiziološki intenzitet zvuka (čujnost) i nivo u dB":[_f("img/l7/d009.jpg","Granica čujnosti i granica bola (nivo L u dB u funkciji frekvencije).")],
+    "Interferencija talasa":[_f("img/l7/d010.jpg","Interferencija — (a) pojačanje (u fazi), (b) poništavanje (u protivfazi).")],
+    "Stojeći talasi":[_f("img/l7/d012.jpg","Stojeći talas — slaganje upadnog i odbijenog talasa (pomak faze π).")],
+    "Doplerov efekat":[_f("img/l7/d028.jpg","Doplerov efekat — zgušnjavanje/razređivanje talasnih frontova zbog kretanja.")],
+    "Prostiranje elektromagnetnih talasa":[_f("img/l7/d035.jpg","EM talas — E (x-osa) i B (y-osa) okomiti; prostiranje duž z-ose.")],
+    "Spektar elektromagnetnih talasa":[_f("img/l7/d044.jpg","Spektar EM talasa — od radio-talasa do gama-zraka.")]
+  });
+
+  setFigs('l9', {
+    "Plankova hipoteza i formula":[_f("img/l9/d017.jpg","Plankova formula se slaže s eksperimentom; Rejli–Džins daje UV katastrofu.")],
+    "Fotoelektrični efekat":[_f("img/l9/d018.jpg","Fotoćelija i I–U karakteristika (struja zasićenja, zaustavni napon).")],
+    "Komptonov efekat":[_f("img/l9/d026.jpg","Komptonov efekat — sudar fotona i elektrona; rasejani foton ima veću λ.")],
+    "Modeli atoma: Tomson i Raderford":[_f("img/l9/d031.jpg","Raderfordov eksperiment — rasejanje α-čestica na zlatnoj foliji."),_f("img/l9/d034.jpg","Planetarni model atoma — Kulonova naspram centrifugalne sile.")],
+    "Borovi postulati":[_f("img/l9/d037.jpg","Borovi prelazi — apsorpcija i emisija fotona (hν = |Eₙ − Eₖ|).")],
+    "Balmerova formula i spektralne serije":[_f("img/l9/d041.jpg","Spektralne serije vodonika (Lajman, Balmer, Pašen …).")]
+  });
+
+  setFigs('l10', {
+    "Čestica u beskonačnoj potencijalnoj jami":[_f("img/l10/d022.jpg","Čestica u jami — kvantovani energijski nivoi i talasne funkcije ψₙ.")],
+    "Tunel-efekat i STM":[_f("img/l10/d027.jpg","Tunel-efekat — talasna funkcija eksponencijalno opada unutar barijere.")],
+    "Kvantni brojevi i Hundovo pravilo":[_f("img/l10/d037.jpg","Izgradnja elektronskog omotača — Hundovo pravilo.")]
+  });
+})();
