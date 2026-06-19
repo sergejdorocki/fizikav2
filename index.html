@@ -290,7 +290,7 @@ function galleryBlock(t){
 function topicSection(t){
   const facts = (t.numbers||[]).map(n=>{const k=Array.isArray(n)?n[0]:(n.name||n.label||n.k||''),v=Array.isArray(n)?n[1]:(n.value||n.v||'');return `<div class="fact"><div class="k">${k}</div><div class="v">${v}</div></div>`;}).join('');
   const forms = (t.formulas||[]).map(f=>`<div class="fbox"><div class="fname">${f.name}</div><div class="feq">$$${f.formula}$$</div><div class="fdesc">${f.desc}</div></div>`).join('');
-  const blocks = t.sections.map(s=>{const h=s.h||s.title||s.name||s.naslov||'';const body=s.html||s.desc||s.content||s.text||'';return `<div class="block"><h3>${h}</h3>${body}</div>`;}).join('');
+  const blocks = t.sections.map(s=>{const h=s.h||s.title||s.name||s.naslov||'';const body=s.html||s.desc||s.content||s.text||'';const figs=(t.figures&&t.figures[h])?[].concat(t.figures[h]).join(''):'';return `<div class="block"><h3>${h}</h3>${body}${figs}</div>`;}).join('');
   return `<section class="topic" id="t-${t.id}">
     <div class="topic-head"><div class="ic">${t.icon}</div>
       <div><h2>${t.title}</h2><div class="sub">${t.subtitle}</div></div></div>

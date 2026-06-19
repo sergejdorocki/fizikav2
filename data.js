@@ -1115,3 +1115,37 @@ const T_l10 = {
 };
 
 const TOPICS = [T_l6, T_l7, T_l8, T_l9, T_l10];
+
+/* === Dodatak: Spektri (slajd 73) + dijagrami (skice) za 8. lekciju === */
+(function(){
+  var l8 = TOPICS.find(function(t){return t.id==='l8';});
+  if(!l8) return;
+  var _f = function(s,c){return '<figure class="figure"><img src="'+s+'" alt="'+c+'"><figcaption>'+c+'</figcaption></figure>';};
+
+  var idx = l8.sections.findIndex(function(s){var h=s.h||s.title||s.name||'';return h.indexOf('Disperzija')>=0;});
+  if(idx<0) idx = l8.sections.length-1;
+  l8.sections.splice(idx+1, 0, {
+    h: "Spektri svetlosti",
+    html: "<p><b>Šta je spektar.</b> Kada složena (bela/polihromatska) svetlost padne na granicu dve sredine ili prođe kroz prizmu, pojedini monohromatski talasi se — zbog zavisnosti indeksa prelamanja od talasne dužine — prelome pod različitim uglovima. Tako se svetlost razloži po talasnim dužinama na <b>spektar</b>.</p>" +
+          "<p><b>Po izgledu:</b></p><ul>" +
+          "<li><b>Kontinualni</b> — neprekidan niz talasnih dužina; daju ga usijana čvrsta tela i tečnosti.</li>" +
+          "<li><b>Trakasti</b> — daju ga usijani gasovi sa višeatomskim molekulima.</li>" +
+          "<li><b>Linijski</b> — uske, razdvojene linije; daju ga jednoatomski gasovi i karakterističan je za svaki element (kao otisak prsta).</li></ul>" +
+          "<p><b>Po nastanku:</b></p><ul>" +
+          "<li><b>Emisioni</b> — nastaju zračenjem (emisijom) svetlosti od usijanih supstanci.</li>" +
+          "<li><b>Apsorpcioni</b> — kada bela svetlost (kontinualan spektar) prođe kroz supstancu, ona apsorbuje neke komponente, pa na tim mestima ostaju <b>tamne linije</b>.</li></ul>" +
+          "<p><b>Kirhofov zakon apsorpcije.</b> Atomi nekog elementa apsorbuju upravo onu svetlost koju pri istim uslovima i sami emituju — zato se položaj tamnih (apsorpcionih) linija tačno poklapa sa položajem svetlih (emisionih) linija istog elementa. <b>Značaj:</b> po spektru se može odrediti hemijski sastav (spektralna analiza — i zvezda).</p>"
+  });
+
+  l8.figures = Object.assign(l8.figures||{}, {
+    "Zakon odbijanja (refleksije)": [_f("img/l8/d007.jpg","Zakon odbijanja: upadni ugao α jednak je odbojnom uglu α'.")],
+    "Zakon prelamanja - Snelijus-Dekartov zakon": [_f("img/l8/d011.jpg","Prelamanje na granici n₁/n₂ — uglovi α i β (Snelijus–Dekartov zakon).")],
+    "Totalna refleksija i opticka vlakna": [_f("img/l8/d021.jpg","Totalna refleksija: za α > αg zrak se potpuno odbija (na αg je β = 90°).")],
+    "Sociva - vrste, karakteristicni zraci, likovi": [_f("img/l8/d031.jpg","Sabirno sočivo — karakteristični zraci i žiže F, F'."),_f("img/l8/d034.jpg","Rasipno sočivo — imaginaran, uspravan i umanjen lik.")],
+    "Jangov eksperiment": [_f("img/l8/d041.jpg","Jangov eksperiment — dve pukotine S₁, S₂ daju interferentne pruge.")],
+    "Difrakcija i opticka resetka": [_f("img/l8/d057.jpg","Difrakcija na optičkoj rešetki: n·λ = a·sinθ.")],
+    "Disperzija svetlosti i duga": [_f("img/l8/d067.jpg","Disperziona kriva n²(ω) — oblasti normalne i anomalne disperzije.")],
+    "Polarizacija - Brusterov i Malusov zakon": [_f("img/l8/d081.jpg","Brusterov ugao — odbijeni i prelomljeni zrak zaklapaju 90°."),_f("img/l8/d088.jpg","Malusov zakon — kroz analizator prolazi komponenta EA = E₀·cosθ.")],
+    "Dvojno prelamanje i opticka aktivnost": [_f("img/l8/d084.jpg","Dvojno prelamanje — redovan i neredovan zrak u kristalu.")]
+  });
+})();
